@@ -3,16 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sculpt Beauty Bar · 朔美 | Facial Contouring &amp; Body Sculpting</title>
-<meta name="description" content="Sculpt Beauty Bar 朔美 — Collagen Lift, Japanese Small Face Therapy and Lymphatic Body Slimming treatments.">
-<link rel="icon" href="images/logo.jpg">
+<title>Sculpt Beauty Bar · 朔美 | Face Lifting, Face Reshaping, Body Slimming</title>
+<meta name="description" content="Sculpt Beauty Bar 朔美 — where TCM wisdom meets German Nanotechnology. Face Lifting, Face Reshaping, Body Slimming and Nail Artistry. 专业塑形 雕琢自然之美">
+<link rel="icon" href="images/icon.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&amp;family=Jost:wght@300;400;500&amp;family=Noto+Serif+SC:wght@400;600&amp;family=Noto+Sans+SC:wght@300;400;500&amp;display=swap" rel="stylesheet">
 <style>
 body{margin:0;background:#F4EFE7}
 a{color:#7A5A3C}a:hover{color:#4E3925}
+@keyframes sbb-scroll{from{transform:translateX(0)}to{transform:translateX(calc(-50% - 12px))}}
+.sbb-track{animation:sbb-scroll 70s linear infinite}
+.sbb-track.sbb-rev{animation-direction:reverse;animation-duration:60s}
+.sbb-marquee:hover .sbb-track,.sbb-marquee:active .sbb-track,.sbb-marquee:focus-within .sbb-track{animation-play-state:paused}
+@media (prefers-reduced-motion: reduce){.sbb-track{animation:none}.sbb-marquee{overflow-x:auto}}
 </style>
-<style>html{scroll-behavior:smooth}img{max-width:100%}section[id]{scroll-margin-top:80px}</style>
+<style>html{scroll-behavior:smooth}img{max-width:100%}section[id]{scroll-margin-top:80px}body{overflow-x:hidden}</style>
 </head>
 <body>
 <div style="font-family: 'Jost', 'Noto Sans SC', sans-serif; color: #3A2E24; background: #F4EFE7; width: 100%; min-height: 100vh">
@@ -20,14 +25,15 @@ a{color:#7A5A3C}a:hover{color:#4E3925}
 <!-- NAV -->
 <header style="position: sticky; top: 0; z-index: 10; background: #080807; border-bottom: 1px solid #2B2622">
 <nav aria-label="Main" style="max-width: 1200px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
-<a href="#top" style="text-decoration: none; display: flex; align-items: baseline; gap: 12px; color: #EBD3BE">
-<span style="font-family: 'Cinzel', serif; font-size: 20px; letter-spacing: 0.2em; font-weight: 500">SCULPT BEAUTY BAR</span>
-<span style="font-family: 'Noto Serif SC', serif; font-size: 18px">朔美</span>
+<a href="#top" style="text-decoration: none; display: flex; align-items: center; gap: 14px; color: #EBD3BE">
+<span style="font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 600; white-space: nowrap">朔美</span>
+<span style="font-family: 'Cinzel', serif; font-size: 18px; letter-spacing: 0.16em; font-weight: 500; white-space: nowrap">SCULPT BEAUTY BAR</span>
 </a>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-size: 14px; letter-spacing: 0.12em">
 <a href="#about" style="text-decoration: none; color: #E6D8CB">ABOUT</a>
 <a href="#services" style="text-decoration: none; color: #E6D8CB">SERVICES</a>
 <a href="#results" style="text-decoration: none; color: #E6D8CB">RESULTS</a>
+<a href="#reviews" style="text-decoration: none; color: #E6D8CB">REVIEWS</a>
 <a href="#visit" style="text-decoration: none; color: #E6D8CB">VISIT</a>
 <a href="#visit" style="text-decoration: none; background: #D9B79C; color: #14100D; padding: 12px 22px; border-radius: 999px">BOOK NOW 预约</a>
 </div>
@@ -37,11 +43,18 @@ a{color:#7A5A3C}a:hover{color:#4E3925}
 <!-- HERO -->
 <section id="top" style="background: #080807; color: #EBD3BE">
 <div style="max-width: 1100px; margin: 0 auto; padding: 24px 24px 96px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 24px">
-<h1 style="margin: 0; width: 100%; max-width: 860px">
-<img src="images/logo.jpg" alt="Sculpt Beauty Bar — Body Sculpting | Facial Contouring" style="display: block; width: 100%; height: auto">
+<h1 style="margin: 0; width: 100%; max-width: 860px; display: flex; flex-direction: column; align-items: center">
+<img src="images/logo-emblem.jpg" alt="" style="display: block; width: 100%; height: auto">
+<span style="font-family: 'Noto Serif SC', serif; font-size: 64px; font-weight: 600; letter-spacing: 0.2em; padding-left: 0.2em; line-height: 1.2; color: #EBD3BE; margin: 8px 0 4px">朔美</span>
+<img src="images/logo-wordmark.jpg" alt="Sculpt Beauty Bar — Body Sculpting | Facial Contouring" style="display: block; width: 100%; height: auto">
 </h1>
-<p style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 22px; letter-spacing: 0.4em; color: #EBD3BE">朔美 · 专业面部 · 身体塑形</p>
-<p style="margin: 0; font-size: 18px; line-height: 1.7; max-width: 560px; color: #CFC3B8">Lifting, face-reshaping and slimming treatments, done by hand. A calm space to refine your contours — and begin again.</p>
+<p style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 22px; letter-spacing: 0.3em; color: #EBD3BE">专业面部 · 身体塑形</p>
+<div style="display: flex; flex-direction: column; gap: 18px; max-width: 640px; padding-top: 8px">
+<p style="margin: 0; font-size: 19px; line-height: 1.7; color: #E6D8CB">Where TCM wisdom meets German Nanotechnology on<br><span style="color: #EBD3BE; letter-spacing: 0.06em; font-weight: 500">Face Lifting. Face Reshaping. Body Slimming.</span></p>
+<p style="margin: 0; font-size: 18px; line-height: 1.7; font-style: italic; color: #CFC3B8">Artistry by hand, guided by intention.</p>
+<p style="margin: 0; font-size: 18px; line-height: 1.7; color: #CFC3B8">A serene space to refine your contours, rediscover your elegance — and begin again.</p>
+<p style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 24px; letter-spacing: 0.2em; color: #EBD3BE; padding-top: 4px">专业塑形 雕琢自然之美</p>
+</div>
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; padding-top: 8px">
 <a href="#visit" style="text-decoration: none; background: #D9B79C; color: #14100D; padding: 16px 30px; border-radius: 999px; font-size: 15px; letter-spacing: 0.14em">BOOK A TREATMENT</a>
 <a href="#services" style="text-decoration: none; border: 1px solid #D9B79C; color: #EBD3BE; padding: 15px 29px; border-radius: 999px; font-size: 15px; letter-spacing: 0.14em">VIEW SERVICES 疗程</a>
@@ -51,21 +64,52 @@ a{color:#7A5A3C}a:hover{color:#4E3925}
 
 <!-- ABOUT -->
 <section id="about" style="background: #EAE0D3">
-<div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; display: flex; flex-wrap: wrap; gap: 64px; align-items: flex-start">
+<div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; display: flex; flex-direction: column; gap: 88px">
+
+<div style="display: flex; flex-wrap: wrap; gap: 64px; align-items: flex-start">
 <div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
 <p style="margin: 0; font-size: 14px; letter-spacing: 0.3em; color: #6E5A47">OUR NAME · 品牌理念</p>
 <h2 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 44px; font-weight: 600; line-height: 1.25">朔，是新月。<br>美，是你。</h2>
 </div>
-<div style="flex: 2 1 480px; min-width: 0; display: flex; flex-wrap: wrap; gap: 40px">
-<div style="flex: 1 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+<div style="flex: 2 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
 <h3 style="margin: 0; font-size: 20px; letter-spacing: 0.1em; font-weight: 500">A new beginning</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.8; color: #4A3C30">「朔」 is the new moon — the start of a fresh cycle. 「美」 is beauty. Together, 朔美 is a promise: every visit is a step toward a lighter, more defined you.</p>
-</div>
-<div style="flex: 1 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
-<h3 style="margin: 0; font-size: 20px; letter-spacing: 0.1em; font-weight: 500">Sculpted by hand</h3>
-<p style="margin: 0; font-family: 'Noto Sans SC', sans-serif; font-size: 16px; line-height: 1.9; color: #4A3C30">我们专注面部提升、小颜塑形与淋巴纤体。以手法为本，温和而专注，为你塑造自然、紧致的轮廓。</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.8; color: #4A3C30">「朔」 marks the new moon — a new beginning. 「美」 is the essence of beauty. Together, 朔美 is a promise: every visit is a step towards a more defined, confident you.</p>
+<p style="margin: 0; font-family: 'Noto Sans SC', sans-serif; font-size: 17px; line-height: 1.9; color: #4A3C30">「朔」，寓意新月，象征崭新的开始。<br>「美」，是美的本质与真谛。</p>
 </div>
 </div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+<div style="flex: 1 1 420px; min-width: 0">
+<img src="images/facial.jpg" alt="Therapist performing a hands-on facial sculpting treatment" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 20px">
+</div>
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h3 style="margin: 0; font-family: 'Cinzel', serif; font-size: 32px; letter-spacing: 0.1em; font-weight: 500">Face Sculpted</h3>
+<p style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 20px; letter-spacing: 0.15em; color: #8A6544">面部雕塑 · 小颜提升</p>
+</div>
+<div style="height: 1px; background: #CDBDA8; max-width: 120px"></div>
+<p style="margin: 0; font-family: 'Noto Sans SC', sans-serif; font-size: 16px; line-height: 1.9; color: #4A3C30">专注小颜塑形与面部提升，以专业手法为本，仪器辅助为辅，秉持温和、细致、专注的护理理念。</p>
+<p style="margin: 0; font-family: 'Noto Sans SC', sans-serif; font-size: 16px; line-height: 1.9; color: #4A3C30">通过细致的面部护理与轮廓塑形，帮助改善面部线条的视觉表现，呈现自然、紧致、流畅的轮廓之美。</p>
+<p style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 17px; line-height: 1.9; color: #3A2E24">以匠心雕琢细节，以专业诠释优雅，让美回归自然，让自信由内而外绽放。</p>
+</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap-reverse; gap: 56px; align-items: center">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h3 style="margin: 0; font-family: 'Cinzel', serif; font-size: 32px; letter-spacing: 0.1em; font-weight: 500">Body Sculpted</h3>
+<p style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 20px; letter-spacing: 0.15em; color: #8A6544">身体雕塑 · 纤体管理</p>
+</div>
+<div style="height: 1px; background: #CDBDA8; max-width: 120px"></div>
+<p style="margin: 0; font-family: 'Noto Sans SC', sans-serif; font-size: 16px; line-height: 1.9; color: #4A3C30">以中医养护理念为基础，结合现代身体管理仪器，注重经络养护、身体循环与体态线条的综合护理。</p>
+<p style="margin: 0; font-family: 'Noto Sans SC', sans-serif; font-size: 16px; line-height: 1.9; color: #4A3C30">通过专业、细致的身体管理，帮助塑造更流畅的身体线条，展现轻盈、匀称与自信之美。</p>
+<p style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 17px; line-height: 1.9; color: #3A2E24">由内调养，由外雕塑，以专业护理诠释身体线条之美。</p>
+</div>
+<div style="flex: 1 1 420px; min-width: 0">
+<img src="images/body.jpg" alt="Therapist performing a body slimming treatment with a contouring device" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 62% center; border-radius: 20px">
+</div>
+</div>
+
 </div>
 </section>
 
@@ -87,11 +131,11 @@ a{color:#7A5A3C}a:hover{color:#4E3925}
 <div style="height: 1px; background: #DDD1C1"></div>
 <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px">
 <li style="display: flex; flex-direction: column; gap: 2px">
-<span style="font-size: 16px; font-weight: 500">Collagen Face Lift</span>
+<span style="font-size: 16px; font-weight: 500">Collagen Firming &amp; Lifting</span>
 <span style="font-family: 'Noto Sans SC', sans-serif; font-size: 15px; color: #6E5A47">胶原紧致提拉护理</span>
 </li>
 </ul>
-<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #4A3C30">Firms and lifts, for skin that looks plumper and more defined.</p>
+<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #4A3C30">A revitalising treatment designed to refine facial contours and leave skin looking firmer, smoother, and more supple.</p>
 <p style="margin: 0; margin-top: auto; display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap"><span style="font-size: 32px; font-weight: 500; color: #8A6544">S$138</span><s style="font-size: 16px; color: #6E5A47">S$298</s><span style="font-family: 'Noto Sans SC', sans-serif; font-size: 13px; letter-spacing: 0.1em; color: #6E5A47">现价 · 原价</span></p>
 </article>
 
@@ -99,11 +143,11 @@ a{color:#7A5A3C}a:hover{color:#4E3925}
 <article style="flex: 1 1 320px; min-width: 0; background: #FBF8F3; border: 1px solid #DDD1C1; border-radius: 20px; padding: 40px 32px; display: flex; flex-direction: column; gap: 20px">
 <p style="margin: 0; font-size: 44px; font-weight: 300; color: #8A6544; line-height: 1">02</p>
 <div style="display: flex; flex-direction: column; gap: 6px">
-<h3 style="margin: 0; font-size: 22px; letter-spacing: 0.12em; font-weight: 500">JAPANESE SMALL FACE THERAPY</h3>
+<h3 style="margin: 0; font-size: 22px; letter-spacing: 0.12em; font-weight: 500">JAPANESE FACIAL SCULPTING</h3>
 <p style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 18px">日式小颜塑颜护理</p>
 </div>
 <div style="height: 1px; background: #DDD1C1"></div>
-<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #4A3C30">A Japanese-inspired contouring technique to refine the jawline and create a smaller, balanced-looking face.</p>
+<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #4A3C30">A Japanese-inspired, hands-on contouring treatment designed to refine the appearance of the jawline and create a more balanced, defined facial silhouette.</p>
 <p style="margin: 0; margin-top: auto; display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap"><span style="font-size: 32px; font-weight: 500; color: #8A6544">S$198</span><s style="font-size: 16px; color: #6E5A47">S$980</s><span style="font-family: 'Noto Sans SC', sans-serif; font-size: 13px; letter-spacing: 0.1em; color: #6E5A47">现价 · 原价</span></p>
 </article>
 
@@ -111,17 +155,49 @@ a{color:#7A5A3C}a:hover{color:#4E3925}
 <article style="flex: 1 1 320px; min-width: 0; background: #FBF8F3; border: 1px solid #DDD1C1; border-radius: 20px; padding: 40px 32px; display: flex; flex-direction: column; gap: 20px">
 <p style="margin: 0; font-size: 44px; font-weight: 300; color: #8A6544; line-height: 1">03</p>
 <div style="display: flex; flex-direction: column; gap: 6px">
-<h3 style="margin: 0; font-size: 22px; letter-spacing: 0.12em; font-weight: 500">LYMPHATIC BODY SLIMMING</h3>
-<p style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 18px">淋巴纤体系列</p>
+<h3 style="margin: 0; font-size: 22px; letter-spacing: 0.12em; font-weight: 500">MERIDIAN BODY CONTOURING</h3>
+<p style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 18px">经络纤体系列</p>
 </div>
 <div style="height: 1px; background: #DDD1C1"></div>
 <ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px">
-<li style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 16px; font-weight: 500">Arms Slimming</span><span style="font-family: 'Noto Sans SC', sans-serif; font-size: 15px; color: #6E5A47">手臂纤体护理</span><span style="display: flex; align-items: baseline; gap: 8px; padding-top: 4px"><span style="font-size: 20px; font-weight: 500; color: #8A6544">S$98</span><s style="font-size: 14px; color: #6E5A47">S$258</s></span></li>
-<li style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 16px; font-weight: 500">Belly Slimming</span><span style="font-family: 'Noto Sans SC', sans-serif; font-size: 15px; color: #6E5A47">腹部纤体护理</span><span style="display: flex; align-items: baseline; gap: 8px; padding-top: 4px"><span style="font-size: 20px; font-weight: 500; color: #8A6544">S$98</span><s style="font-size: 14px; color: #6E5A47">S$238</s></span></li>
-<li style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 16px; font-weight: 500">Back Slimming</span><span style="font-family: 'Noto Sans SC', sans-serif; font-size: 15px; color: #6E5A47">背部纤体护理</span><span style="display: flex; align-items: baseline; gap: 8px; padding-top: 4px"><span style="font-size: 20px; font-weight: 500; color: #8A6544">S$98</span><s style="font-size: 14px; color: #6E5A47">S$258</s></span></li>
-<li style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 16px; font-weight: 500">Thigh Slimming</span><span style="font-family: 'Noto Sans SC', sans-serif; font-size: 15px; color: #6E5A47">大腿纤体护理</span><span style="display: flex; align-items: baseline; gap: 8px; padding-top: 4px"><span style="font-size: 20px; font-weight: 500; color: #8A6544">S$108</span><s style="font-size: 14px; color: #6E5A47">S$268</s></span></li>
+<li style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 16px; font-weight: 500">Arms Contouring</span><span style="font-family: 'Noto Sans SC', sans-serif; font-size: 15px; color: #6E5A47">手臂纤体护理</span><span style="display: flex; align-items: baseline; gap: 8px; padding-top: 4px"><span style="font-size: 20px; font-weight: 500; color: #8A6544">S$98</span><s style="font-size: 14px; color: #6E5A47">S$258</s></span></li>
+<li style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 16px; font-weight: 500">Abdominal Contouring</span><span style="font-family: 'Noto Sans SC', sans-serif; font-size: 15px; color: #6E5A47">腹部纤体护理</span><span style="display: flex; align-items: baseline; gap: 8px; padding-top: 4px"><span style="font-size: 20px; font-weight: 500; color: #8A6544">S$98</span><s style="font-size: 14px; color: #6E5A47">S$238</s></span></li>
+<li style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 16px; font-weight: 500">Back Contouring</span><span style="font-family: 'Noto Sans SC', sans-serif; font-size: 15px; color: #6E5A47">背部纤体护理</span><span style="display: flex; align-items: baseline; gap: 8px; padding-top: 4px"><span style="font-size: 20px; font-weight: 500; color: #8A6544">S$98</span><s style="font-size: 14px; color: #6E5A47">S$258</s></span></li>
+<li style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 16px; font-weight: 500">Thigh Contouring</span><span style="font-family: 'Noto Sans SC', sans-serif; font-size: 15px; color: #6E5A47">大腿纤体护理</span><span style="display: flex; align-items: baseline; gap: 8px; padding-top: 4px"><span style="font-size: 20px; font-weight: 500; color: #8A6544">S$108</span><s style="font-size: 14px; color: #6E5A47">S$268</s></span></li>
 </ul>
-<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #4A3C30">Lymphatic drainage massage to reduce puffiness and shape problem areas.</p>
+<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #4A3C30">A hands-on body treatment incorporating meridian techniques and lymphatic drainage massage to help ease the feeling of puffiness and refine the appearance of your natural contours.</p>
+</article>
+<article style="flex: 1 1 100%; min-width: 0; box-sizing: border-box; background: #FBF8F3; border: 1px solid #DDD1C1; border-radius: 20px; padding: 40px 32px; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-wrap: wrap; gap: 24px 48px; align-items: flex-end; justify-content: space-between">
+<div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+<p style="margin: 0; font-size: 44px; font-weight: 300; color: #8A6544; line-height: 1">04</p>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h3 style="margin: 0; font-size: 22px; letter-spacing: 0.12em; font-weight: 500">NAIL ARTISTRY</h3>
+<p style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 18px">艺术美甲</p>
+</div>
+<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #4A3C30; max-width: 560px">An artful expression of individuality, adorned with delicate details, dimensional accents and considered embellishments.</p>
+</div>
+<p style="margin: 0; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap"><span style="font-size: 14px; letter-spacing: 0.14em; color: #6E5A47">FROM</span><span style="font-size: 32px; font-weight: 500; color: #8A6544">S$68 – S$88</span></p>
+</div>
+<div style="height: 1px; background: #DDD1C1"></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px">
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 10px">
+<img src="images/nail-bow.jpg" alt="Nail design: Blush ombré with 3D bows" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 14px">
+<figcaption style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px"><span style="font-size: 14px; color: #4A3C30">Blush ombré with 3D bows</span><span style="font-size: 18px; font-weight: 500; color: #8A6544">S$88</span></figcaption>
+</figure>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 10px">
+<img src="images/nail-pearl.jpg" alt="Nail design: Pearl-trimmed almond French" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 14px">
+<figcaption style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px"><span style="font-size: 14px; color: #4A3C30">Pearl-trimmed almond French</span><span style="font-size: 18px; font-weight: 500; color: #8A6544">S$88</span></figcaption>
+</figure>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 10px">
+<img src="images/nail-burgundy.jpg" alt="Nail design: Burgundy &amp; ribbon accents" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 14px">
+<figcaption style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px"><span style="font-size: 14px; color: #4A3C30">Burgundy &amp; ribbon accents</span><span style="font-size: 18px; font-weight: 500; color: #8A6544">S$78</span></figcaption>
+</figure>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 10px">
+<img src="images/nail-nude.jpg" alt="Nail design: Sheer nude gloss" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 14px">
+<figcaption style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px"><span style="font-size: 14px; color: #4A3C30">Sheer nude gloss</span><span style="font-size: 18px; font-weight: 500; color: #8A6544">S$68</span></figcaption>
+</figure>
+</div>
 </article>
 </div>
 </section>
@@ -137,55 +213,35 @@ a{color:#7A5A3C}a:hover{color:#4E3925}
 <div style="display: flex; flex-wrap: wrap; gap: 24px">
 <figure style="flex: 1 1 460px; min-width: 0; margin: 0; background: #FBF8F3; border: 1px solid #DDD1C1; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column">
 <div style="position: relative">
-<img src="images/result-cheekbone.jpg" alt="Before and after cheekbone contouring, front view" style="display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: center">
-<div style="position: absolute; left: 0; right: 0; bottom: 12px; display: flex; justify-content: space-around; pointer-events: none">
+<img src="images/result-cheekbone.jpg" alt="Before and after cheekbone contouring, front view" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; background: #F1EAE0">
+<div style="position: absolute; left: 0; right: 0; top: 12px; display: flex; justify-content: space-around; pointer-events: none">
 <span style="background: #080807; color: #EBD3BE; font-size: 12px; letter-spacing: 0.2em; padding: 6px 14px; border-radius: 999px">BEFORE</span>
 <span style="background: #080807; color: #EBD3BE; font-size: 12px; letter-spacing: 0.2em; padding: 6px 14px; border-radius: 999px">AFTER</span>
 </div>
 </div>
 <figcaption style="padding: 28px 28px 32px; display: flex; flex-direction: column; gap: 8px">
-<span style="font-size: 13px; letter-spacing: 0.2em; color: #8A6544">JAPANESE SMALL FACE THERAPY</span>
-<span style="font-size: 20px; font-weight: 500">Cheekbones visibly brought in on both sides</span>
-<span style="font-family: 'Noto Sans SC', sans-serif; font-size: 16px; color: #4A3C30">颧骨内推，两侧轮廓明显收窄</span>
+<span style="font-size: 13px; letter-spacing: 0.2em; color: #8A6544">JAPANESE FACIAL SCULPTING</span>
+<span style="font-size: 20px; font-weight: 500">Cheekbones and jawline visibly brought in on both sides</span>
+<span style="font-family: 'Noto Sans SC', sans-serif; font-size: 16px; color: #4A3C30">颧骨/下颚骨内推，两侧轮廓明显收窄</span>
 </figcaption>
 </figure>
 
 <figure style="flex: 1 1 460px; min-width: 0; margin: 0; background: #FBF8F3; border: 1px solid #DDD1C1; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column">
 <div style="position: relative">
-<img src="images/result-symmetry.jpg" alt="Before and after facial asymmetry adjustment, front view" style="display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: center">
-<div style="position: absolute; left: 0; right: 0; bottom: 12px; display: flex; justify-content: space-around; pointer-events: none">
+<img src="images/result-symmetry.jpg" alt="Before and after facial asymmetry adjustment, front view" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; background: #F1EAE0">
+<div style="position: absolute; left: 0; right: 0; top: 12px; display: flex; justify-content: space-around; pointer-events: none">
 <span style="background: #080807; color: #EBD3BE; font-size: 12px; letter-spacing: 0.2em; padding: 6px 14px; border-radius: 999px">BEFORE</span>
 <span style="background: #080807; color: #EBD3BE; font-size: 12px; letter-spacing: 0.2em; padding: 6px 14px; border-radius: 999px">AFTER</span>
 </div>
 </div>
 <figcaption style="padding: 28px 28px 32px; display: flex; flex-direction: column; gap: 8px">
-<span style="font-size: 13px; letter-spacing: 0.2em; color: #8A6544">JAPANESE SMALL FACE THERAPY</span>
+<span style="font-size: 13px; letter-spacing: 0.2em; color: #8A6544">JAPANESE FACIAL SCULPTING</span>
 <span style="font-size: 20px; font-weight: 500">Uneven, slanted face shape rebalanced</span>
 <span style="font-family: 'Noto Sans SC', sans-serif; font-size: 16px; color: #4A3C30">脸型偏斜，调整后更对称</span>
 </figcaption>
 </figure>
 </div>
 
-<div style="display: flex; flex-wrap: wrap; gap: 24px">
-<blockquote style="flex: 1 1 300px; min-width: 0; margin: 0; background: #FBF8F3; border: 1px solid #DDD1C1; border-radius: 20px; padding: 32px 28px; display: flex; flex-direction: column; gap: 16px">
-<span aria-hidden="true" style="font-family: 'Cinzel', serif; font-size: 48px; line-height: 0.6; color: #8A6544">“</span>
-<span style="align-self: flex-start; background: #F3D9C9; color: #6B3A22; font-size: 11px; letter-spacing: 0.2em; padding: 4px 10px; border-radius: 999px">SAMPLE · 示例</span>
-<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #4A3C30">My jawline looks so much softer after the small face therapy. The therapist was gentle and explained every step. I already booked my next session.</p>
-<footer style="font-size: 14px; letter-spacing: 0.1em; color: #6E5A47">— Rachel T. · Japanese Small Face Therapy</footer>
-</blockquote>
-<blockquote style="flex: 1 1 300px; min-width: 0; margin: 0; background: #FBF8F3; border: 1px solid #DDD1C1; border-radius: 20px; padding: 32px 28px; display: flex; flex-direction: column; gap: 16px">
-<span aria-hidden="true" style="font-family: 'Cinzel', serif; font-size: 48px; line-height: 0.6; color: #8A6544">“</span>
-<span style="align-self: flex-start; background: #F3D9C9; color: #6B3A22; font-size: 11px; letter-spacing: 0.2em; padding: 4px 10px; border-radius: 999px">SAMPLE · 示例</span>
-<p style="margin: 0; font-family: 'Noto Sans SC', sans-serif; font-size: 16px; line-height: 1.8; color: #4A3C30">做完胶原提拉，皮肤紧致了很多，整个人看起来更有精神。环境安静舒服，很放松。</p>
-<footer style="font-size: 14px; letter-spacing: 0.1em; color: #6E5A47">— 陈小姐 · 胶原紧致提拉护理</footer>
-</blockquote>
-<blockquote style="flex: 1 1 300px; min-width: 0; margin: 0; background: #FBF8F3; border: 1px solid #DDD1C1; border-radius: 20px; padding: 32px 28px; display: flex; flex-direction: column; gap: 16px">
-<span aria-hidden="true" style="font-family: 'Cinzel', serif; font-size: 48px; line-height: 0.6; color: #8A6544">“</span>
-<span style="align-self: flex-start; background: #F3D9C9; color: #6B3A22; font-size: 11px; letter-spacing: 0.2em; padding: 4px 10px; border-radius: 999px">SAMPLE · 示例</span>
-<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #4A3C30">I came for belly slimming and felt less bloated right after. Friendly team, fair prices, and no hard selling.</p>
-<footer style="font-size: 14px; letter-spacing: 0.1em; color: #6E5A47">— Michelle L. · Belly Slimming</footer>
-</blockquote>
-</div>
 <p style="margin: 0; text-align: center; font-size: 13px; color: #6E5A47">Individual results vary. 效果因人而异。</p>
 </div>
 </section>
@@ -193,27 +249,27 @@ a{color:#7A5A3C}a:hover{color:#4E3925}
 <!-- PROCESS -->
 <section style="background: #080807; color: #F4EFE7">
 <div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 48px">
-<h2 style="margin: 0; font-size: 36px; letter-spacing: 0.12em; font-weight: 400; text-align: center">Your Visit · 护理流程</h2>
+<h2 style="margin: 0; font-size: 36px; letter-spacing: 0.12em; font-weight: 400; text-align: center">Your Visit · 您的护理之旅</h2>
 <div style="display: flex; flex-wrap: wrap; gap: 32px">
 <div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 10px; border-top: 1px solid #8C7A66; padding-top: 20px">
-<p style="margin: 0; font-size: 14px; letter-spacing: 0.2em; color: #D8C6AE">STEP 1</p>
-<h3 style="margin: 0; font-size: 20px; font-weight: 500">Consultation · 咨询</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #E3D7C6">We understand your goals and assess your face or body.</p>
+<p style="margin: 0; font-size: 14px; letter-spacing: 0.2em; color: #D8C6AE">STEP 01</p>
+<h3 style="margin: 0; font-size: 20px; font-weight: 500">Consultation · 初步咨询</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #E3D7C6">We begin by understanding your beauty goals, concerns, and individual needs.</p>
 </div>
 <div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 10px; border-top: 1px solid #8C7A66; padding-top: 20px">
-<p style="margin: 0; font-size: 14px; letter-spacing: 0.2em; color: #D8C6AE">STEP 2</p>
-<h3 style="margin: 0; font-size: 20px; font-weight: 500">Tailored plan · 定制方案</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #E3D7C6">A treatment series matched to your needs.</p>
+<p style="margin: 0; font-size: 14px; letter-spacing: 0.2em; color: #D8C6AE">STEP 02</p>
+<h3 style="margin: 0; font-size: 20px; font-weight: 500">Personalised Approach · 专属护理方案</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #E3D7C6">A tailored treatment approach thoughtfully designed around your needs and preferences.</p>
 </div>
 <div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 10px; border-top: 1px solid #8C7A66; padding-top: 20px">
-<p style="margin: 0; font-size: 14px; letter-spacing: 0.2em; color: #D8C6AE">STEP 3</p>
-<h3 style="margin: 0; font-size: 20px; font-weight: 500">Treatment · 护理</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #E3D7C6">Relax while our therapist sculpts and lifts.</p>
+<p style="margin: 0; font-size: 14px; letter-spacing: 0.2em; color: #D8C6AE">STEP 03</p>
+<h3 style="margin: 0; font-size: 20px; font-weight: 500">The Treatment · 细致护理</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #E3D7C6">Relax and unwind as our therapist performs your chosen hands-on treatment with care and precision.</p>
 </div>
 <div style="flex: 1 1 220px; min-width: 0; display: flex; flex-direction: column; gap: 10px; border-top: 1px solid #8C7A66; padding-top: 20px">
-<p style="margin: 0; font-size: 14px; letter-spacing: 0.2em; color: #D8C6AE">STEP 4</p>
-<h3 style="margin: 0; font-size: 20px; font-weight: 500">Aftercare · 居家建议</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #E3D7C6">Simple tips to help your results last.</p>
+<p style="margin: 0; font-size: 14px; letter-spacing: 0.2em; color: #D8C6AE">STEP 04</p>
+<h3 style="margin: 0; font-size: 20px; font-weight: 500">Aftercare &amp; Guidance · 居家护理建议</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #E3D7C6">Receive simple, practical guidance to help maintain your skin’s appearance and support your ongoing self-care.</p>
 </div>
 </div>
 </div>
@@ -223,8 +279,9 @@ a{color:#7A5A3C}a:hover{color:#4E3925}
 <section id="visit" style="max-width: 1200px; margin: 0 auto; padding: 112px 24px; display: flex; flex-wrap: wrap; gap: 56px; align-items: stretch">
 <div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
 <p style="margin: 0; font-size: 14px; letter-spacing: 0.3em; color: #6E5A47">VISIT US · 预约到店</p>
-<h2 style="margin: 0; font-size: 44px; letter-spacing: 0.08em; font-weight: 400; line-height: 1.2">Begin your<br>new chapter.</h2>
-<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #4A3C30">Appointments by booking. Message us on WhatsApp and we'll find a time that suits you.</p>
+<h2 style="margin: 0; font-size: 44px; letter-spacing: 0.08em; font-weight: 400; line-height: 1.2">Begin Your<br>New Chapter.</h2>
+<p style="margin: 0; font-family: 'Cinzel', serif; font-size: 20px; line-height: 1.6; color: #3A2E24">Every transformation begins with a moment for yourself.</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #4A3C30">By appointment only. Connect with us on WhatsApp to arrange your personalised beauty experience.</p>
 <div style="display: flex; flex-direction: column; gap: 18px; font-size: 16px; line-height: 1.6">
 <div style="display: flex; gap: 16px"><span style="width: 96px; flex: none; font-size: 13px; letter-spacing: 0.18em; color: #6E5A47; padding-top: 3px">ADDRESS</span><span>[SALON ADDRESS], Singapore [POSTAL CODE]</span></div>
 <div style="display: flex; gap: 16px"><span style="width: 96px; flex: none; font-size: 13px; letter-spacing: 0.18em; color: #6E5A47; padding-top: 3px">HOURS</span><span>[OPENING HOURS]</span></div>
@@ -236,6 +293,119 @@ a{color:#7A5A3C}a:hover{color:#4E3925}
 </div>
 </div>
 <div role="img" aria-label="Map placeholder" style="flex: 1 1 380px; min-width: 0; min-height: 360px; border-radius: 20px; background: #E6DACB; display: flex; align-items: center; justify-content: center; color: #6E5A47; font-size: 14px; letter-spacing: 0.12em; text-align: center; padding: 24px; box-sizing: border-box">[MAP / STOREFRONT PHOTO]</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="reviews" style="background: #EAE0D3">
+<div style="max-width: 1200px; margin: 0 auto; padding: 112px 24px; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 12px; align-items: center; text-align: center">
+<p style="margin: 0; font-size: 14px; letter-spacing: 0.3em; color: #6E5A47">TESTIMONIALS · 顾客好评</p>
+<h2 style="margin: 0; font-family: 'Cinzel', serif; font-size: 44px; letter-spacing: 0.12em; font-weight: 400">Kind Words</h2>
+<p style="margin: 0; font-size: 15px; color: #6E5A47">From our clients’ reviews on Carousell</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 24px; margin: 0 -24px; -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent)">
+<div class="sbb-marquee" style="overflow: hidden; padding: 4px 0">
+<div class="sbb-track" style="display: flex; align-items: stretch; gap: 24px; width: max-content">
+<blockquote style="flex: none; width: min(340px, 80vw); box-sizing: border-box; margin: 0; background: #FBF8F3; border: 1px solid #DDD1C1; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<div role="img" aria-label="5 out of 5 stars" style="display: flex; gap: 3px"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg></div>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #4A3C30">Did thigh and hip slimming. Result is immediate. My hip size was reduced by 2cm (even Cindy was shocked herself). After I finished my session, I wore my skirt and could see that my skirt was loose already. Cindy is very friendly and humble and makes the session comfortable. No hard-selling also!</p>
+<footer style="font-size: 14px; letter-spacing: 0.06em; color: #6E5A47">— michelle.lws · Thigh &amp; Hip</footer>
+</blockquote>
+<blockquote style="flex: none; width: min(340px, 80vw); box-sizing: border-box; margin: 0; background: #FBF8F3; border: 1px solid #DDD1C1; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<div role="img" aria-label="5 out of 5 stars" style="display: flex; gap: 3px"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg></div>
+<p style="margin: 0; font-family: 'Noto Sans SC', sans-serif; font-size: 16px; line-height: 1.8; color: #4A3C30">整骨效果非常好，如果不是老板娘告诉我，我自己也不知道自己原来左右面不平衡。只做了一次推脸后效果已经很显著，10分推介。</p>
+<footer style="font-size: 14px; letter-spacing: 0.06em; color: #6E5A47">— yvonnetsang0752 · 面部整骨 Face</footer>
+</blockquote>
+<blockquote style="flex: none; width: min(340px, 80vw); box-sizing: border-box; margin: 0; background: #FBF8F3; border: 1px solid #DDD1C1; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<div role="img" aria-label="5 out of 5 stars" style="display: flex; gap: 3px"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg></div>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #4A3C30">Cindy is really a very charming and friendly person. She treats her customers as friends, advises only what they need, no hard selling at all. The treatment is painless and she works magic on my face — it’s even prettier now.</p>
+<footer style="font-size: 14px; letter-spacing: 0.06em; color: #6E5A47">— peppermintnt · Face</footer>
+</blockquote>
+<blockquote style="flex: none; width: min(340px, 80vw); box-sizing: border-box; margin: 0; background: #FBF8F3; border: 1px solid #DDD1C1; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<div role="img" aria-label="5 out of 5 stars" style="display: flex; gap: 3px"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg></div>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #4A3C30">No hard selling, no watching of time, willing to share her knowledge and most importantly I see the effects immediately. Not the typical slimming packages outside where they ask you to take medications or restrict anything. I like what I see and how I feel.</p>
+<footer style="font-size: 14px; letter-spacing: 0.06em; color: #6E5A47">— veryboringme · Arms</footer>
+</blockquote>
+<blockquote style="flex: none; width: min(340px, 80vw); box-sizing: border-box; margin: 0; background: #FBF8F3; border: 1px solid #DDD1C1; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<div role="img" aria-label="5 out of 5 stars" style="display: flex; gap: 3px"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg></div>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #4A3C30">Cindy is a very experienced therapist, very talkative and friendly. Results can be seen in one treatment.</p>
+<p style="margin: 0; font-family: 'Noto Sans SC', sans-serif; font-size: 16px; line-height: 1.8; color: #4A3C30">Cindy是一个很有经验的治疗师，很健谈也很亲和。护理也是真的一次见效，当场见到效果。</p>
+<footer style="font-size: 14px; letter-spacing: 0.06em; color: #6E5A47">— cindy_ho94 · 面部整骨 Face</footer>
+</blockquote>
+<blockquote aria-hidden="true" style="flex: none; width: min(340px, 80vw); box-sizing: border-box; margin: 0; background: #FBF8F3; border: 1px solid #DDD1C1; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<div role="img" aria-label="5 out of 5 stars" style="display: flex; gap: 3px"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg></div>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #4A3C30">Did thigh and hip slimming. Result is immediate. My hip size was reduced by 2cm (even Cindy was shocked herself). After I finished my session, I wore my skirt and could see that my skirt was loose already. Cindy is very friendly and humble and makes the session comfortable. No hard-selling also!</p>
+<footer style="font-size: 14px; letter-spacing: 0.06em; color: #6E5A47">— michelle.lws · Thigh &amp; Hip</footer>
+</blockquote>
+<blockquote aria-hidden="true" style="flex: none; width: min(340px, 80vw); box-sizing: border-box; margin: 0; background: #FBF8F3; border: 1px solid #DDD1C1; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<div role="img" aria-label="5 out of 5 stars" style="display: flex; gap: 3px"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg></div>
+<p style="margin: 0; font-family: 'Noto Sans SC', sans-serif; font-size: 16px; line-height: 1.8; color: #4A3C30">整骨效果非常好，如果不是老板娘告诉我，我自己也不知道自己原来左右面不平衡。只做了一次推脸后效果已经很显著，10分推介。</p>
+<footer style="font-size: 14px; letter-spacing: 0.06em; color: #6E5A47">— yvonnetsang0752 · 面部整骨 Face</footer>
+</blockquote>
+<blockquote aria-hidden="true" style="flex: none; width: min(340px, 80vw); box-sizing: border-box; margin: 0; background: #FBF8F3; border: 1px solid #DDD1C1; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<div role="img" aria-label="5 out of 5 stars" style="display: flex; gap: 3px"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg></div>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #4A3C30">Cindy is really a very charming and friendly person. She treats her customers as friends, advises only what they need, no hard selling at all. The treatment is painless and she works magic on my face — it’s even prettier now.</p>
+<footer style="font-size: 14px; letter-spacing: 0.06em; color: #6E5A47">— peppermintnt · Face</footer>
+</blockquote>
+<blockquote aria-hidden="true" style="flex: none; width: min(340px, 80vw); box-sizing: border-box; margin: 0; background: #FBF8F3; border: 1px solid #DDD1C1; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<div role="img" aria-label="5 out of 5 stars" style="display: flex; gap: 3px"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg></div>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #4A3C30">No hard selling, no watching of time, willing to share her knowledge and most importantly I see the effects immediately. Not the typical slimming packages outside where they ask you to take medications or restrict anything. I like what I see and how I feel.</p>
+<footer style="font-size: 14px; letter-spacing: 0.06em; color: #6E5A47">— veryboringme · Arms</footer>
+</blockquote>
+<blockquote aria-hidden="true" style="flex: none; width: min(340px, 80vw); box-sizing: border-box; margin: 0; background: #FBF8F3; border: 1px solid #DDD1C1; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<div role="img" aria-label="5 out of 5 stars" style="display: flex; gap: 3px"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg></div>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #4A3C30">Cindy is a very experienced therapist, very talkative and friendly. Results can be seen in one treatment.</p>
+<p style="margin: 0; font-family: 'Noto Sans SC', sans-serif; font-size: 16px; line-height: 1.8; color: #4A3C30">Cindy是一个很有经验的治疗师，很健谈也很亲和。护理也是真的一次见效，当场见到效果。</p>
+<footer style="font-size: 14px; letter-spacing: 0.06em; color: #6E5A47">— cindy_ho94 · 面部整骨 Face</footer>
+</blockquote>
+</div>
+</div>
+<div class="sbb-marquee" style="overflow: hidden; padding: 4px 0">
+<div class="sbb-track sbb-rev" style="display: flex; align-items: stretch; gap: 24px; width: max-content">
+<blockquote style="flex: none; width: min(340px, 80vw); box-sizing: border-box; margin: 0; background: #FBF8F3; border: 1px solid #DDD1C1; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<div role="img" aria-label="5 out of 5 stars" style="display: flex; gap: 3px"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg></div>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #4A3C30">Cindy knows her stuff well! Very good in pushing and massage. Did the thigh slimming and can see some effect on the side of my thighs. Trying the face slimming next! She will recommend what you should do but won’t hard sell.</p>
+<footer style="font-size: 14px; letter-spacing: 0.06em; color: #6E5A47">— ponyjang · Thighs</footer>
+</blockquote>
+<blockquote style="flex: none; width: min(340px, 80vw); box-sizing: border-box; margin: 0; background: #FBF8F3; border: 1px solid #DDD1C1; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<div role="img" aria-label="5 out of 5 stars" style="display: flex; gap: 3px"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg></div>
+<p style="margin: 0; font-family: 'Noto Sans SC', sans-serif; font-size: 16px; line-height: 1.8; color: #4A3C30">技術很好很專業，做完效果就非常明顯，臉頰緊實了，法令紋也沒那麼深了，會繼續支持。</p>
+<footer style="font-size: 14px; letter-spacing: 0.06em; color: #6E5A47">— a0918983384 · Face</footer>
+</blockquote>
+<blockquote style="flex: none; width: min(340px, 80vw); box-sizing: border-box; margin: 0; background: #FBF8F3; border: 1px solid #DDD1C1; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<div role="img" aria-label="5 out of 5 stars" style="display: flex; gap: 3px"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg></div>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #4A3C30">Went down for a try and wow, I have lost inches from my back and thighs. Worth your money and time. Cindy is very friendly and nice and always does her very best so that you will see results.</p>
+<footer style="font-size: 14px; letter-spacing: 0.06em; color: #6E5A47">— kimora34 · Back &amp; Thighs</footer>
+</blockquote>
+<blockquote style="flex: none; width: min(340px, 80vw); box-sizing: border-box; margin: 0; background: #FBF8F3; border: 1px solid #DDD1C1; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<div role="img" aria-label="5 out of 5 stars" style="display: flex; gap: 3px"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg></div>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #4A3C30">Cindy is very friendly. Her treatments are good and I’ve seen improvements. Highly recommended.</p>
+<footer style="font-size: 14px; letter-spacing: 0.06em; color: #6E5A47">— divenoona · Face</footer>
+</blockquote>
+<blockquote aria-hidden="true" style="flex: none; width: min(340px, 80vw); box-sizing: border-box; margin: 0; background: #FBF8F3; border: 1px solid #DDD1C1; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<div role="img" aria-label="5 out of 5 stars" style="display: flex; gap: 3px"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg></div>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #4A3C30">Cindy knows her stuff well! Very good in pushing and massage. Did the thigh slimming and can see some effect on the side of my thighs. Trying the face slimming next! She will recommend what you should do but won’t hard sell.</p>
+<footer style="font-size: 14px; letter-spacing: 0.06em; color: #6E5A47">— ponyjang · Thighs</footer>
+</blockquote>
+<blockquote aria-hidden="true" style="flex: none; width: min(340px, 80vw); box-sizing: border-box; margin: 0; background: #FBF8F3; border: 1px solid #DDD1C1; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<div role="img" aria-label="5 out of 5 stars" style="display: flex; gap: 3px"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg></div>
+<p style="margin: 0; font-family: 'Noto Sans SC', sans-serif; font-size: 16px; line-height: 1.8; color: #4A3C30">技術很好很專業，做完效果就非常明顯，臉頰緊實了，法令紋也沒那麼深了，會繼續支持。</p>
+<footer style="font-size: 14px; letter-spacing: 0.06em; color: #6E5A47">— a0918983384 · Face</footer>
+</blockquote>
+<blockquote aria-hidden="true" style="flex: none; width: min(340px, 80vw); box-sizing: border-box; margin: 0; background: #FBF8F3; border: 1px solid #DDD1C1; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<div role="img" aria-label="5 out of 5 stars" style="display: flex; gap: 3px"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg></div>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #4A3C30">Went down for a try and wow, I have lost inches from my back and thighs. Worth your money and time. Cindy is very friendly and nice and always does her very best so that you will see results.</p>
+<footer style="font-size: 14px; letter-spacing: 0.06em; color: #6E5A47">— kimora34 · Back &amp; Thighs</footer>
+</blockquote>
+<blockquote aria-hidden="true" style="flex: none; width: min(340px, 80vw); box-sizing: border-box; margin: 0; background: #FBF8F3; border: 1px solid #DDD1C1; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<div role="img" aria-label="5 out of 5 stars" style="display: flex; gap: 3px"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg></div>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #4A3C30">Cindy is very friendly. Her treatments are good and I’ve seen improvements. Highly recommended.</p>
+<footer style="font-size: 14px; letter-spacing: 0.06em; color: #6E5A47">— divenoona · Face</footer>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
 </section>
 
 <!-- FOOTER -->
