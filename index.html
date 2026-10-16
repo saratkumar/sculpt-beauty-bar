@@ -4,18 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sculpt Beauty Bar · 朔美 | Face Lifting, Face Reshaping, Body Slimming</title>
-<meta name="description" content="Sculpt Beauty Bar 朔美 — where TCM wisdom meets German Nanotechnology. Face Lifting, Face Reshaping, Body Slimming and Nail Artistry. 专业塑形 雕琢自然之美">
+<meta name="description" content="Sculpt Beauty Bar 朔美 — Face Lifting, Face Reshaping, Body Slimming and Nail Artistry. 专业塑形 雕琢自然之美">
 <link rel="icon" href="images/icon.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&amp;family=Jost:wght@300;400;500&amp;family=Noto+Serif+SC:wght@400;600&amp;family=Noto+Sans+SC:wght@300;400;500&amp;display=swap" rel="stylesheet">
 <style>
 body{margin:0;background:#F4EFE7}
 a{color:#7A5A3C}a:hover{color:#4E3925}
-@keyframes sbb-scroll{from{transform:translateX(0)}to{transform:translateX(calc(-50% - 12px))}}
-.sbb-track{animation:sbb-scroll 70s linear infinite}
-.sbb-track.sbb-rev{animation-direction:reverse;animation-duration:60s}
-.sbb-marquee:hover .sbb-track,.sbb-marquee:active .sbb-track,.sbb-marquee:focus-within .sbb-track{animation-play-state:paused}
-@media (prefers-reduced-motion: reduce){.sbb-track{animation:none}.sbb-marquee{overflow-x:auto}}
+.sbb-marquee{scrollbar-width:none;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+.sbb-marquee::-webkit-scrollbar{display:none}
 </style>
 <style>html{scroll-behavior:smooth}img{max-width:100%}section[id]{scroll-margin-top:80px}body{overflow-x:hidden}</style>
 </head>
@@ -33,7 +30,7 @@ a{color:#7A5A3C}a:hover{color:#4E3925}
 <a href="#about" style="text-decoration: none; color: #E6D8CB">ABOUT</a>
 <a href="#services" style="text-decoration: none; color: #E6D8CB">SERVICES</a>
 <a href="#results" style="text-decoration: none; color: #E6D8CB">RESULTS</a>
-<a href="#reviews" style="text-decoration: none; color: #E6D8CB">REVIEWS</a>
+<a href="#reviews" style="text-decoration: none; color: #E6D8CB">TESTIMONIAL</a>
 <a href="#visit" style="text-decoration: none; color: #E6D8CB">VISIT</a>
 <a href="#visit" style="text-decoration: none; background: #D9B79C; color: #14100D; padding: 12px 22px; border-radius: 999px">BOOK NOW 预约</a>
 </div>
@@ -45,15 +42,14 @@ a{color:#7A5A3C}a:hover{color:#4E3925}
 <div style="max-width: 1100px; margin: 0 auto; padding: 24px 24px 96px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 24px">
 <h1 style="margin: 0; width: 100%; max-width: 860px; display: flex; flex-direction: column; align-items: center">
 <img src="images/logo-emblem.jpg" alt="" style="display: block; width: 100%; height: auto">
-<span style="font-family: 'Noto Serif SC', serif; font-size: 64px; font-weight: 600; letter-spacing: 0.2em; padding-left: 0.2em; line-height: 1.2; color: #EBD3BE; margin: 8px 0 4px">朔美</span>
+<span style="font-family: 'Noto Serif SC', serif; font-size: clamp(30px, 8vw, 48px); font-weight: 600; letter-spacing: 0.2em; padding-left: 0.2em; line-height: 1.2; color: #EBD3BE; margin: 8px 0 4px">朔美</span>
 <img src="images/logo-wordmark.jpg" alt="Sculpt Beauty Bar — Body Sculpting | Facial Contouring" style="display: block; width: 100%; height: auto">
 </h1>
 <p style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 22px; letter-spacing: 0.3em; color: #EBD3BE">专业面部 · 身体塑形</p>
 <div style="display: flex; flex-direction: column; gap: 18px; max-width: 640px; padding-top: 8px">
-<p style="margin: 0; font-size: 19px; line-height: 1.7; color: #E6D8CB">Where TCM wisdom meets German Nanotechnology on<br><span style="color: #EBD3BE; letter-spacing: 0.06em; font-weight: 500">Face Lifting. Face Reshaping. Body Slimming.</span></p>
+<p style="margin: 0; font-size: 19px; line-height: 1.7; color: #E6D8CB"><span style="color: #EBD3BE; letter-spacing: 0.06em; font-weight: 500">Face Lifting. Face Reshaping. Body Slimming.</span></p>
 <p style="margin: 0; font-size: 18px; line-height: 1.7; font-style: italic; color: #CFC3B8">Artistry by hand, guided by intention.</p>
 <p style="margin: 0; font-size: 18px; line-height: 1.7; color: #CFC3B8">A serene space to refine your contours, rediscover your elegance — and begin again.</p>
-<p style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 24px; letter-spacing: 0.2em; color: #EBD3BE; padding-top: 4px">专业塑形 雕琢自然之美</p>
 </div>
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; padding-top: 8px">
 <a href="#visit" style="text-decoration: none; background: #D9B79C; color: #14100D; padding: 16px 30px; border-radius: 999px; font-size: 15px; letter-spacing: 0.14em">BOOK A TREATMENT</a>
@@ -70,6 +66,7 @@ a{color:#7A5A3C}a:hover{color:#4E3925}
 <div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
 <p style="margin: 0; font-size: 14px; letter-spacing: 0.3em; color: #6E5A47">OUR NAME · 品牌理念</p>
 <h2 style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 44px; font-weight: 600; line-height: 1.25">朔，是新月。<br>美，是你。</h2>
+<p style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 24px; letter-spacing: 0.2em; color: #4A3C30; padding-top: 4px">专业塑形 雕琢自然之美</p>
 </div>
 <div style="flex: 2 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
 <h3 style="margin: 0; font-size: 20px; letter-spacing: 0.1em; font-weight: 500">A new beginning</h3>
@@ -165,7 +162,7 @@ a{color:#7A5A3C}a:hover{color:#4E3925}
 <li style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 16px; font-weight: 500">Back Contouring</span><span style="font-family: 'Noto Sans SC', sans-serif; font-size: 15px; color: #6E5A47">背部纤体护理</span><span style="display: flex; align-items: baseline; gap: 8px; padding-top: 4px"><span style="font-size: 20px; font-weight: 500; color: #8A6544">S$98</span><s style="font-size: 14px; color: #6E5A47">S$258</s></span></li>
 <li style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 16px; font-weight: 500">Thigh Contouring</span><span style="font-family: 'Noto Sans SC', sans-serif; font-size: 15px; color: #6E5A47">大腿纤体护理</span><span style="display: flex; align-items: baseline; gap: 8px; padding-top: 4px"><span style="font-size: 20px; font-weight: 500; color: #8A6544">S$108</span><s style="font-size: 14px; color: #6E5A47">S$268</s></span></li>
 </ul>
-<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #4A3C30">A hands-on body treatment incorporating meridian techniques and lymphatic drainage massage to help ease the feeling of puffiness and refine the appearance of your natural contours.</p>
+<p style="margin: 0; font-size: 15px; line-height: 1.7; color: #4A3C30">Combining German-engineered technology with Traditional Chinese Medicine (TCM) principles, our body sculpting treatment supports body contouring, skin firming, and circulation. Paired with a heated abdominal wrap, it provides a relaxing body care experience designed to support a smoother, firmer-looking figure.</p>
 </article>
 <article style="flex: 1 1 100%; min-width: 0; box-sizing: border-box; background: #FBF8F3; border: 1px solid #DDD1C1; border-radius: 20px; padding: 40px 32px; display: flex; flex-direction: column; gap: 28px">
 <div style="display: flex; flex-wrap: wrap; gap: 24px 48px; align-items: flex-end; justify-content: space-between">
@@ -183,19 +180,15 @@ a{color:#7A5A3C}a:hover{color:#4E3925}
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px">
 <figure style="margin: 0; display: flex; flex-direction: column; gap: 10px">
 <img src="images/nail-bow.jpg" alt="Nail design: Blush ombré with 3D bows" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 14px">
-<figcaption style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px"><span style="font-size: 14px; color: #4A3C30">Blush ombré with 3D bows</span><span style="font-size: 18px; font-weight: 500; color: #8A6544">S$88</span></figcaption>
 </figure>
 <figure style="margin: 0; display: flex; flex-direction: column; gap: 10px">
 <img src="images/nail-pearl.jpg" alt="Nail design: Pearl-trimmed almond French" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 14px">
-<figcaption style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px"><span style="font-size: 14px; color: #4A3C30">Pearl-trimmed almond French</span><span style="font-size: 18px; font-weight: 500; color: #8A6544">S$88</span></figcaption>
 </figure>
 <figure style="margin: 0; display: flex; flex-direction: column; gap: 10px">
 <img src="images/nail-burgundy.jpg" alt="Nail design: Burgundy &amp; ribbon accents" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 14px">
-<figcaption style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px"><span style="font-size: 14px; color: #4A3C30">Burgundy &amp; ribbon accents</span><span style="font-size: 18px; font-weight: 500; color: #8A6544">S$78</span></figcaption>
 </figure>
 <figure style="margin: 0; display: flex; flex-direction: column; gap: 10px">
 <img src="images/nail-nude.jpg" alt="Nail design: Sheer nude gloss" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 14px">
-<figcaption style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px"><span style="font-size: 14px; color: #4A3C30">Sheer nude gloss</span><span style="font-size: 18px; font-weight: 500; color: #8A6544">S$68</span></figcaption>
 </figure>
 </div>
 </article>
@@ -283,13 +276,13 @@ a{color:#7A5A3C}a:hover{color:#4E3925}
 <p style="margin: 0; font-family: 'Cinzel', serif; font-size: 20px; line-height: 1.6; color: #3A2E24">Every transformation begins with a moment for yourself.</p>
 <p style="margin: 0; font-size: 17px; line-height: 1.7; color: #4A3C30">By appointment only. Connect with us on WhatsApp to arrange your personalised beauty experience.</p>
 <div style="display: flex; flex-direction: column; gap: 18px; font-size: 16px; line-height: 1.6">
-<div style="display: flex; gap: 16px"><span style="width: 96px; flex: none; font-size: 13px; letter-spacing: 0.18em; color: #6E5A47; padding-top: 3px">ADDRESS</span><span>[SALON ADDRESS], Singapore [POSTAL CODE]</span></div>
-<div style="display: flex; gap: 16px"><span style="width: 96px; flex: none; font-size: 13px; letter-spacing: 0.18em; color: #6E5A47; padding-top: 3px">HOURS</span><span>[OPENING HOURS]</span></div>
-<div style="display: flex; gap: 16px"><span style="width: 96px; flex: none; font-size: 13px; letter-spacing: 0.18em; color: #6E5A47; padding-top: 3px">WHATSAPP</span><span>[+65 XXXX XXXX]</span></div>
+<div style="display: flex; gap: 16px"><span style="width: 96px; flex: none; font-size: 13px; letter-spacing: 0.18em; color: #6E5A47; padding-top: 3px">ADDRESS</span><span>51 Chin Swee Road #01-77, Singapore 160051</span></div>
+<div style="display: flex; gap: 16px"><span style="width: 96px; flex: none; font-size: 13px; letter-spacing: 0.18em; color: #6E5A47; padding-top: 3px">HOURS</span><span>11am – 9pm daily</span></div>
+<div style="display: flex; gap: 16px"><span style="width: 96px; flex: none; font-size: 13px; letter-spacing: 0.18em; color: #6E5A47; padding-top: 3px">WHATSAPP</span><span><a href="https://wa.me/6581291123">+65 8129 1123</a></span></div>
 <div style="display: flex; gap: 16px"><span style="width: 96px; flex: none; font-size: 13px; letter-spacing: 0.18em; color: #6E5A47; padding-top: 3px">INSTAGRAM</span><span>[@HANDLE]</span></div>
 </div>
 <div style="display: flex; flex-wrap: wrap; gap: 14px; padding-top: 8px">
-<a href="https://wa.me/" style="text-decoration: none; background: #8A6544; color: #FFFFFF; padding: 16px 30px; border-radius: 999px; font-size: 15px; letter-spacing: 0.14em">WHATSAPP TO BOOK</a>
+<a href="https://wa.me/6581291123" style="text-decoration: none; background: #8A6544; color: #FFFFFF; padding: 16px 30px; border-radius: 999px; font-size: 15px; letter-spacing: 0.14em">WHATSAPP TO BOOK</a>
 </div>
 </div>
 <div role="img" aria-label="Map placeholder" style="flex: 1 1 380px; min-width: 0; min-height: 360px; border-radius: 20px; background: #E6DACB; display: flex; align-items: center; justify-content: center; color: #6E5A47; font-size: 14px; letter-spacing: 0.12em; text-align: center; padding: 24px; box-sizing: border-box">[MAP / STOREFRONT PHOTO]</div>
@@ -300,11 +293,11 @@ a{color:#7A5A3C}a:hover{color:#4E3925}
 <div style="max-width: 1200px; margin: 0 auto; padding: 112px 24px; display: flex; flex-direction: column; gap: 48px">
 <div style="display: flex; flex-direction: column; gap: 12px; align-items: center; text-align: center">
 <p style="margin: 0; font-size: 14px; letter-spacing: 0.3em; color: #6E5A47">TESTIMONIALS · 顾客好评</p>
-<h2 style="margin: 0; font-family: 'Cinzel', serif; font-size: 44px; letter-spacing: 0.12em; font-weight: 400">Kind Words</h2>
+<h2 style="margin: 0; font-family: 'Cinzel', serif; font-size: 44px; letter-spacing: 0.12em; font-weight: 400">Compliments</h2>
 <p style="margin: 0; font-size: 15px; color: #6E5A47">From our clients’ reviews on Carousell</p>
 </div>
 <div style="display: flex; flex-direction: column; gap: 24px; margin: 0 -24px; -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent)">
-<div class="sbb-marquee" style="overflow: hidden; padding: 4px 0">
+<div class="sbb-marquee" style="overflow-x: auto; padding: 4px 0">
 <div class="sbb-track" style="display: flex; align-items: stretch; gap: 24px; width: max-content">
 <blockquote style="flex: none; width: min(340px, 80vw); box-sizing: border-box; margin: 0; background: #FBF8F3; border: 1px solid #DDD1C1; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
 <div role="img" aria-label="5 out of 5 stars" style="display: flex; gap: 3px"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg></div>
@@ -360,7 +353,7 @@ a{color:#7A5A3C}a:hover{color:#4E3925}
 </blockquote>
 </div>
 </div>
-<div class="sbb-marquee" style="overflow: hidden; padding: 4px 0">
+<div class="sbb-marquee" style="overflow-x: auto; padding: 4px 0">
 <div class="sbb-track sbb-rev" style="display: flex; align-items: stretch; gap: 24px; width: max-content">
 <blockquote style="flex: none; width: min(340px, 80vw); box-sizing: border-box; margin: 0; background: #FBF8F3; border: 1px solid #DDD1C1; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
 <div role="img" aria-label="5 out of 5 stars" style="display: flex; gap: 3px"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#B88A5E"></path></svg></div>
@@ -411,11 +404,54 @@ a{color:#7A5A3C}a:hover{color:#4E3925}
 <!-- FOOTER -->
 <footer style="border-top: 1px solid #DDD1C1">
 <div style="max-width: 1200px; margin: 0 auto; padding: 40px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; font-size: 14px; color: #6E5A47; letter-spacing: 0.08em">
-<span style="font-family: 'Cinzel', serif; color: #3A2E24; font-size: 16px; letter-spacing: 0.2em">SCULPT BEAUTY BAR <span style="font-family: 'Noto Serif SC', serif">朔美</span></span>
+<span style="font-family: 'Cinzel', serif; color: #3A2E24; font-size: 16px; letter-spacing: 0.2em"><span style="font-family: 'Noto Serif SC', serif">朔美</span> SCULPT BEAUTY BAR</span>
 <span>© 2026 Sculpt Beauty Bar. All rights reserved.</span>
 </div>
 </footer>
 
 </div>
+<script>
+// Compliments: auto-scroll each row, pause while the visitor swipes/hovers, loop seamlessly.
+(function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('.sbb-marquee').forEach(function (m) {
+    var track = m.querySelector('.sbb-track');
+    var dir = track.classList.contains('sbb-rev') ? -1 : 1;
+    var speed = 32; // px per second
+    var held = false, idleUntil = 0, pos = 0, last = 0;
+    function loopLen() { return track.scrollWidth / 2 + 12; }
+    function wrap() {
+      var L = loopLen();
+      if (m.scrollLeft >= L) m.scrollLeft -= L;
+      else if (m.scrollLeft <= 0) m.scrollLeft += L;
+    }
+    function pause() { held = true; }
+    function release() { held = false; idleUntil = performance.now() + 2500; }
+    m.addEventListener('touchstart', pause, { passive: true });
+    m.addEventListener('touchend', release);
+    m.addEventListener('touchcancel', release);
+    m.addEventListener('mouseenter', pause);
+    m.addEventListener('mouseleave', release);
+    m.addEventListener('wheel', function () { idleUntil = performance.now() + 2500; }, { passive: true });
+    m.addEventListener('scroll', function () { if (held || performance.now() < idleUntil) wrap(); }, { passive: true });
+    requestAnimationFrame(function () { if (dir < 0) m.scrollLeft = loopLen(); pos = m.scrollLeft; });
+    if (reduce) return;
+    function tick(t) {
+      var dt = last ? Math.min((t - last) / 1000, 0.1) : 0;
+      last = t;
+      if (held || t < idleUntil) {
+        pos = m.scrollLeft;
+      } else {
+        var L = loopLen();
+        pos += dir * speed * dt;
+        if (pos >= L) pos -= L; else if (pos < 0) pos += L;
+        m.scrollLeft = pos;
+      }
+      requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  });
+})();
+</script>
 </body>
 </html>
