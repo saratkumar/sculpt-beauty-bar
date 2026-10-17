@@ -14,6 +14,13 @@ a{color:#7A5A3C}a:hover{color:#4E3925}
 .sbb-marquee{scrollbar-width:none;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
 .sbb-marquee::-webkit-scrollbar{display:none}
 </style>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+.sbb-pin{width:56px;height:56px;border-radius:50%;background:#080807 url(images/icon.jpg) center 40%/cover no-repeat;border:3px solid #D9B79C;box-shadow:0 6px 16px rgba(20,16,13,.35);position:relative}
+.sbb-pin::after{content:"";position:absolute;left:50%;bottom:-11px;margin-left:-8px;border:8px solid transparent;border-top:10px solid #D9B79C;border-bottom:0}
+.leaflet-container{font-family:'Jost',sans-serif}
+#sbb-map .leaflet-tile-pane{filter:grayscale(.45) sepia(.18) brightness(1.03)}
+</style>
 <style>html{scroll-behavior:smooth}img{max-width:100%}section[id]{scroll-margin-top:80px}body{overflow-x:hidden}</style>
 </head>
 <body>
@@ -285,7 +292,14 @@ a{color:#7A5A3C}a:hover{color:#4E3925}
 <a href="https://wa.me/6581291123" style="text-decoration: none; background: #8A6544; color: #FFFFFF; padding: 16px 30px; border-radius: 999px; font-size: 15px; letter-spacing: 0.14em">WHATSAPP TO BOOK</a>
 </div>
 </div>
-<div role="img" aria-label="Map placeholder" style="flex: 1 1 380px; min-width: 0; min-height: 360px; border-radius: 20px; background: #E6DACB; display: flex; align-items: center; justify-content: center; color: #6E5A47; font-size: 14px; letter-spacing: 0.12em; text-align: center; padding: 24px; box-sizing: border-box">[MAP / STOREFRONT PHOTO]</div>
+<div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+<div id="sbb-map" role="region" aria-label="Map showing Sculpt Beauty Bar at Block 51 Chin Swee Road" style="height: 380px; border-radius: 20px; overflow: hidden; background: #E6DACB; border: 1px solid #DDD1C1"></div>
+<div style="background: #FBF8F3; border: 1px solid #DDD1C1; border-radius: 20px; padding: 24px 28px; display: flex; flex-direction: column; gap: 14px; font-size: 16px; line-height: 1.6">
+<div style="display: flex; gap: 16px"><span style="width: 96px; flex: none; font-size: 13px; letter-spacing: 0.18em; color: #6E5A47; padding-top: 3px">BY MRT</span><span>5 mins walk from Chinatown MRT, Exit C</span></div>
+<div style="display: flex; gap: 16px"><span style="width: 96px; flex: none; font-size: 13px; letter-spacing: 0.18em; color: #6E5A47; padding-top: 3px">BY CAR</span><span>Park at Blk 54 Chin Swee Road multi-storey carpark</span></div>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=51+Chin+Swee+Road+%2301-77+Singapore+160051" target="_blank" rel="noopener" style="align-self: flex-start; margin-top: 4px; text-decoration: none; border: 1px solid #8A6544; color: #8A6544; padding: 12px 22px; border-radius: 999px; font-size: 14px; letter-spacing: 0.14em">OPEN IN GOOGLE MAPS</a>
+</div>
+</div>
 </section>
 
 <!-- TESTIMONIALS -->
@@ -451,6 +465,25 @@ a{color:#7A5A3C}a:hover{color:#4E3925}
     }
     requestAnimationFrame(tick);
   });
+})();
+</script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+// Visit map: unit #01-77 sits at the north-west end of Blk 51 Chin Swee Road.
+(function () {
+  if (!window.L) return;
+  var spot = [1.28762, 103.84175];
+  var map = L.map('sbb-map', {
+    center: spot, zoom: 17, scrollWheelZoom: false,
+    dragging: !L.Browser.mobile, tap: false
+  });
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map);
+  var pin = L.divIcon({ className: '', html: '<div class="sbb-pin"></div>', iconSize: [56, 56], iconAnchor: [28, 70], popupAnchor: [0, -66] });
+  L.marker(spot, { icon: pin, title: 'Sculpt Beauty Bar 朔美' }).addTo(map)
+    .bindPopup('<strong>Sculpt Beauty Bar 朔美</strong><br>51 Chin Swee Road #01-77<br>Singapore 160051');
 })();
 </script>
 </body>
