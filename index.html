@@ -21,26 +21,36 @@ a{color:#7A5A3C}a:hover{color:#4E3925}
 .leaflet-container{font-family:'Jost',sans-serif}
 #sbb-map .leaflet-tile-pane{filter:grayscale(.45) sepia(.18) brightness(1.03)}
 </style>
-<style>html{scroll-behavior:smooth}img{max-width:100%}section[id]{scroll-margin-top:80px}body{overflow-x:hidden}</style>
+<style>html{scroll-behavior:smooth}img{max-width:100%}section[id]{scroll-margin-top:80px}
+@media (max-width: 640px){
+.sbb-header nav{padding:10px 16px!important;gap:8px!important}
+.sbb-brand{gap:8px!important}
+.sbb-brand span:first-child{font-size:18px!important}
+.sbb-brand span:last-child{font-size:12px!important;letter-spacing:.08em!important}
+.sbb-book{margin-left:auto;padding:6px 12px!important;font-size:11px!important;letter-spacing:.06em!important}
+.sbb-links{order:3;width:100%;margin-left:0!important;flex-wrap:nowrap!important;justify-content:space-between;gap:12px!important;font-size:12px!important;letter-spacing:.08em!important;overflow-x:auto;scrollbar-width:none}
+.sbb-links::-webkit-scrollbar{display:none}
+section[id]{scroll-margin-top:84px}
+}body{overflow-x:hidden}</style>
 </head>
 <body>
 <div style="font-family: 'Jost', 'Noto Sans SC', sans-serif; color: #3A2E24; background: #F4EFE7; width: 100%; min-height: 100vh">
 
 <!-- NAV -->
-<header style="position: sticky; top: 0; z-index: 10; background: #080807; border-bottom: 1px solid #2B2622">
+<header class="sbb-header" style="position: sticky; top: 0; z-index: 10; background: #080807; border-bottom: 1px solid #2B2622">
 <nav aria-label="Main" style="max-width: 1200px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
-<a href="#top" style="text-decoration: none; display: flex; align-items: center; gap: 14px; color: #EBD3BE">
+<a href="#top" class="sbb-brand" style="text-decoration: none; display: flex; align-items: center; gap: 14px; color: #EBD3BE">
 <span style="font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 600; white-space: nowrap">朔美</span>
 <span style="font-family: 'Cinzel', serif; font-size: 18px; letter-spacing: 0.16em; font-weight: 500; white-space: nowrap">SCULPT BEAUTY BAR</span>
 </a>
-<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-size: 14px; letter-spacing: 0.12em">
+<div class="sbb-links" style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-size: 14px; letter-spacing: 0.12em; margin-left: auto">
 <a href="#about" style="text-decoration: none; color: #E6D8CB">ABOUT</a>
 <a href="#services" style="text-decoration: none; color: #E6D8CB">SERVICES</a>
 <a href="#results" style="text-decoration: none; color: #E6D8CB">RESULTS</a>
 <a href="#reviews" style="text-decoration: none; color: #E6D8CB">TESTIMONIAL</a>
 <a href="#visit" style="text-decoration: none; color: #E6D8CB">VISIT</a>
-<a href="#visit" style="text-decoration: none; background: #D9B79C; color: #14100D; padding: 12px 22px; border-radius: 999px">BOOK NOW 预约</a>
 </div>
+<a href="#visit" class="sbb-book" style="text-decoration: none; background: #D9B79C; color: #14100D; padding: 12px 22px; border-radius: 999px; font-size: 14px; letter-spacing: 0.12em; white-space: nowrap">BOOK NOW 预约</a>
 </nav>
 </header>
 
@@ -92,9 +102,11 @@ a{color:#7A5A3C}a:hover{color:#4E3925}
 <p style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 20px; letter-spacing: 0.15em; color: #8A6544">面部雕塑 · 小颜提升</p>
 </div>
 <div style="height: 1px; background: #CDBDA8; max-width: 120px"></div>
+<p style="margin: 0; font-size: 16px; line-height: 1.75; color: #4A3C30">We specialize in facial sculpting and lifting, with professional techniques at the heart of our approach and advanced equipment as a complement. Every treatment is carefully tailored aiming to enhance the appearance of facial contours, creating a naturally refined, firmer, and more harmonious look.</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.75; color: #4A3C30">With artistry in every detail and professionalism in every touch, we celebrate the beauty of elegance and natural refinement — allowing beauty to remain true to itself and confidence to shine from within.</p>
 <p style="margin: 0; font-family: 'Noto Sans SC', sans-serif; font-size: 16px; line-height: 1.9; color: #4A3C30">专注小颜塑形与面部提升，以专业手法为本，仪器辅助为辅，秉持温和、细致、专注的护理理念。</p>
 <p style="margin: 0; font-family: 'Noto Sans SC', sans-serif; font-size: 16px; line-height: 1.9; color: #4A3C30">通过细致的面部护理与轮廓塑形，帮助改善面部线条的视觉表现，呈现自然、紧致、流畅的轮廓之美。</p>
-<p style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 17px; line-height: 1.9; color: #3A2E24">以匠心雕琢细节，以专业诠释优雅，让美回归自然，让自信由内而外绽放。</p>
+<p style="margin: 0; font-family: 'Noto Sans SC', sans-serif; font-size: 16px; line-height: 1.9; color: #4A3C30">以匠心雕琢细节，以专业诠释优雅，让美回归自然，让自信由内而外绽放。</p>
 </div>
 </div>
 
@@ -105,9 +117,11 @@ a{color:#7A5A3C}a:hover{color:#4E3925}
 <p style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 20px; letter-spacing: 0.15em; color: #8A6544">身体雕塑 · 纤体管理</p>
 </div>
 <div style="height: 1px; background: #CDBDA8; max-width: 120px"></div>
+<p style="margin: 0; font-size: 16px; line-height: 1.75; color: #4A3C30">Rooted in the principles of Traditional Chinese Medicine (TCM) and complemented by modern body management technology, our treatments focus on meridian care, circulation, and the overall refinement of body contours.</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.75; color: #4A3C30">With professional care and a holistic approach, we celebrate the natural beauty of your body’s contours.</p>
 <p style="margin: 0; font-family: 'Noto Sans SC', sans-serif; font-size: 16px; line-height: 1.9; color: #4A3C30">以中医养护理念为基础，结合现代身体管理仪器，注重经络养护、身体循环与体态线条的综合护理。</p>
 <p style="margin: 0; font-family: 'Noto Sans SC', sans-serif; font-size: 16px; line-height: 1.9; color: #4A3C30">通过专业、细致的身体管理，帮助塑造更流畅的身体线条，展现轻盈、匀称与自信之美。</p>
-<p style="margin: 0; font-family: 'Noto Serif SC', serif; font-size: 17px; line-height: 1.9; color: #3A2E24">由内调养，由外雕塑，以专业护理诠释身体线条之美。</p>
+<p style="margin: 0; font-family: 'Noto Sans SC', sans-serif; font-size: 16px; line-height: 1.9; color: #4A3C30">由内调养，由外雕塑，以专业护理诠释身体线条之美。</p>
 </div>
 <div style="flex: 1 1 420px; min-width: 0">
 <img src="images/body.jpg" alt="Therapist performing a body slimming treatment with a contouring device" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 62% center; border-radius: 20px">
