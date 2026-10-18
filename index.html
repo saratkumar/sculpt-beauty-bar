@@ -19,6 +19,7 @@ a{color:#7A5A3C}a:hover{color:#4E3925}
 .sbb-pin{width:56px;height:56px;border-radius:50%;background:#080807 url(images/icon.jpg) center 40%/cover no-repeat;border:3px solid #D9B79C;box-shadow:0 6px 16px rgba(20,16,13,.35);position:relative}
 .sbb-pin::after{content:"";position:absolute;left:50%;bottom:-11px;margin-left:-8px;border:8px solid transparent;border-top:10px solid #D9B79C;border-bottom:0}
 .leaflet-container{font-family:'Jost',sans-serif}
+#sbb-map{isolation:isolate;z-index:0}
 #sbb-map .leaflet-tile-pane{filter:grayscale(.45) sepia(.18) brightness(1.03)}
 </style>
 <style>html{scroll-behavior:smooth}img{max-width:100%}section[id]{scroll-margin-top:80px}
@@ -37,7 +38,7 @@ section[id]{scroll-margin-top:84px}
 <div style="font-family: 'Jost', 'Noto Sans SC', sans-serif; color: #3A2E24; background: #F4EFE7; width: 100%; min-height: 100vh">
 
 <!-- NAV -->
-<header class="sbb-header" style="position: sticky; top: 0; z-index: 10; background: #080807; border-bottom: 1px solid #2B2622">
+<header class="sbb-header" style="position: sticky; top: 0; z-index: 1000; background: #080807; border-bottom: 1px solid #2B2622">
 <nav aria-label="Main" style="max-width: 1200px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
 <a href="#top" class="sbb-brand" style="text-decoration: none; display: flex; align-items: center; gap: 14px; color: #EBD3BE">
 <span style="font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 600; white-space: nowrap">朔美</span>
@@ -226,12 +227,12 @@ section[id]{scroll-margin-top:84px}
 
 <div style="display: flex; flex-wrap: wrap; gap: 24px">
 <figure style="flex: 1 1 460px; min-width: 0; margin: 0; background: #FBF8F3; border: 1px solid #DDD1C1; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column">
-<div style="position: relative">
-<img src="images/result-cheekbone.jpg" alt="Before and after cheekbone contouring, front view" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; background: #F1EAE0">
-<div style="position: absolute; left: 0; right: 0; top: 12px; display: flex; justify-content: space-around; pointer-events: none">
+<div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; justify-items: center; padding: 14px 0; border-bottom: 1px solid #DDD1C1">
 <span style="background: #080807; color: #EBD3BE; font-size: 12px; letter-spacing: 0.2em; padding: 6px 14px; border-radius: 999px">BEFORE</span>
 <span style="background: #080807; color: #EBD3BE; font-size: 12px; letter-spacing: 0.2em; padding: 6px 14px; border-radius: 999px">AFTER</span>
 </div>
+<img src="images/result-cheekbone.jpg" alt="Before and after cheekbone contouring, front view" style="display: block; width: 100%; height: auto">
 </div>
 <figcaption style="padding: 28px 28px 32px; display: flex; flex-direction: column; gap: 8px">
 <span style="font-size: 13px; letter-spacing: 0.2em; color: #8A6544">JAPANESE FACIAL SCULPTING</span>
@@ -241,12 +242,12 @@ section[id]{scroll-margin-top:84px}
 </figure>
 
 <figure style="flex: 1 1 460px; min-width: 0; margin: 0; background: #FBF8F3; border: 1px solid #DDD1C1; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column">
-<div style="position: relative">
-<img src="images/result-symmetry.jpg" alt="Before and after facial asymmetry adjustment, front view" style="display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; background: #F1EAE0">
-<div style="position: absolute; left: 0; right: 0; top: 12px; display: flex; justify-content: space-around; pointer-events: none">
+<div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; justify-items: center; padding: 14px 0; border-bottom: 1px solid #DDD1C1">
 <span style="background: #080807; color: #EBD3BE; font-size: 12px; letter-spacing: 0.2em; padding: 6px 14px; border-radius: 999px">BEFORE</span>
 <span style="background: #080807; color: #EBD3BE; font-size: 12px; letter-spacing: 0.2em; padding: 6px 14px; border-radius: 999px">AFTER</span>
 </div>
+<img src="images/result-symmetry.jpg" alt="Before and after facial asymmetry adjustment, front view" style="display: block; width: 100%; height: auto">
 </div>
 <figcaption style="padding: 28px 28px 32px; display: flex; flex-direction: column; gap: 8px">
 <span style="font-size: 13px; letter-spacing: 0.2em; color: #8A6544">JAPANESE FACIAL SCULPTING</span>
